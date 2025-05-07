@@ -6,7 +6,7 @@ phases:
       - echo "Installing..."
   build:
     commands:
-      - echo "No build step needed for static site"
+      - echo "No build step needed for static site 1"
 artifacts:
   files:
     - '**/*'
