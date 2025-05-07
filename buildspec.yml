@@ -5,11 +5,12 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
+      - export NODE_OPTIONS=--openssl-legacy-provider
       - npm install -g @angular/cli
       - npm install
   build:
     commands:
-      - ng build --configuration production
+      - npm run build -- --configuration production
 artifacts:
   files:
     - '**/*'
