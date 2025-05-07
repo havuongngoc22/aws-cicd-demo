@@ -2,11 +2,15 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 18
     commands:
-      - echo "Installing..."
+      - npm install -g @angular/cli
+      - npm install
   build:
     commands:
-      - echo "No build step needed for static site 1"
+      - ng build --configuration production
 artifacts:
   files:
     - '**/*'
+  base-directory: dist/my-angular-cicd
