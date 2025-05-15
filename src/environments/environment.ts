@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000/api'
+  apiUrl: 'https://m866zhl885.execute-api.ap-southeast-1.amazonaws.com/default'
 };
 
 /*
